@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Про мене — Олександр Коваленко</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="header">
+    <a class="logo" href="#hero">ОК</a>
+    <nav class="nav" id="nav" aria-label="Головна навігація">
+      <a href="#hero">Головна</a>
+      <a href="#skills">Навички</a>
+      <a href="#goals">Мої цілі</a>
+      <a href="#contact">Контакт</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <p class="eyebrow reveal">Привіт, я</p>
+      <h1 class="reveal">Олександр Коваленко</h1>
+      <p class="hero-lead reveal">
+        Навчаюсь веброзробці й створюю акуратні, зручні інтерфейси.
+        Мені цікаво перетворювати ідеї на сторінки, які добре виглядають
+        і на телефоні, і на великому екрані.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#contact">Зв’язатися</a>
+        <a class="btn btn-ghost" href="#skills">Мої навички</a>
+        <a class="btn btn-ghost" href="#goals">Мої цілі</a>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <header class="section-head reveal">
+        <p class="eyebrow">Що вмію</p>
+        <h2>Навички</h2>
+      </header>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M4 7h16M4 12h10M4 17h7"/>
+            </svg>
+          </div>
+          <h3>HTML</h3>
+          <p>Семантична розмітка, доступна структура сторінки та чиста ієрархія контенту.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="4" y="5" width="16" height="14" rx="2"/>
+              <path d="M8 9h8M8 13h5"/>
+            </svg>
+          </div>
+          <h3>CSS</h3>
+          <p>Адаптивна верстка, гнучкі сітки, анімації та сучасний мінімалістичний стиль.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/>
+            </svg>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Інтерактивність, валідація форм і плавна поведінка сторінки без зайвого шуму.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="goals">
+      <header class="section-head reveal">
+        <p class="eyebrow">Куди рухаюсь</p>
+        <h2>Мої цілі</h2>
+      </header>
+      <ul class="goals">
+        <li class="goal reveal">
+          <span class="goal-num">01</span>
+          <div>
+            <h3>Поглибити фронтенд</h3>
+            <p>Впевнено працювати з HTML, CSS і JavaScript, щоб збирати повноцінні адаптивні сайти.</p>
+          </div>
+        </li>
+        <li class="goal reveal">
+          <span class="goal-num">02</span>
+          <div>
+            <h3>Зібрати портфоліо</h3>
+            <p>Оформити кілька навчальних проєктів так, щоб їх було зручно показати роботодавцю.</p>
+          </div>
+        </li>
+        <li class="goal reveal">
+          <span class="goal-num">03</span>
+          <div>
+            <h3>Працювати в команді</h3>
+            <p>Навчитись писати зрозумілий код і домовлятись про структуру, стилі та задачі.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section contact" id="contact">
+      <header class="section-head reveal">
+        <p class="eyebrow">Напиши мені</p>
+        <h2>Контакт</h2>
+      </header>
+      <div class="contact-grid">
+        <div class="contact-copy reveal">
+          <p>Якщо хочете обговорити спільний проєкт або просто привітатися — залиште повідомлення. Я відповім, щойно побачу лист.</p>
+          <ul class="contact-meta">
+            <li>Email: <a href="mailto:oleksandr@example.com">oleksandr@example.com</a></li>
+            <li>Місто: Київ, Україна</li>
+          </ul>
+        </div>
+        <form class="form reveal" id="contactForm" novalidate>
+          <label>
+            Ім’я
+            <input type="text" name="name" id="name" autocomplete="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" id="email" autocomplete="email" required>
+          </label>
+          <label>
+            Повідомлення
+            <textarea name="message" id="message" rows="4" required></textarea>
+          </label>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <button class="btn btn-primary" type="submit">Надіслати</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Олександр Коваленко</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
